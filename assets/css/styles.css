@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2? family= Indie+Flor & display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: Flor Indie, Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(../image/NvL.gif);
+    
+}
+
+#nav-bar{
+    width: 100%;   
+    
+}
+
+ul#menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+ul#menu li{
+    background-color: rgb(0, 232, 62);
+    list-style: none;
+    padding: .7rem 1rem .7rem;
+    font-size: 1.3rem;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    transition: all .2s;
+    
+}
+
+ul#menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul#menu li:hover{
+    transform: scale(1.2);
+    background-color: black;
+    color: rgb(0, 232, 62);
+    text-decoration-line: underline;
+}
+
+ul#menu li a:hover{
+    color: rgb(0, 232, 62);
+}
+
+header{
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#eu img{
+    display: flex;
+    width: 15rem;
+    border-radius: 30%;
+    padding: 1.5rem;
+    margin: 0 auto;
+    
+}
+
+.box{
+    background-color: black;
+    padding: 4rem;
+    width: 84vh;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+header h1{
+    font-size: 1.8rem;
+}
+
+header h2{
+    font-size: 1rem;
+    padding: 1rem;
+    
+}
+
+.title{
+    background-color: rgb(0, 232, 62);
+    font-size: 1.5rem;
+    font-variant:small-caps;
+    font-weight: lighter;
+    color: black;
+    width: 98vh;
+    /*margin: 1rem 1rem 1rem 12rem;*/
+    text-align: center;
+    border-radius: 1rem;
+    
+}
+
+p#sobre{
+    color: white;
+    font-size: large;
+}
+
+ul#contatos{
+    color: white;
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+
+.text-contatos{
+    margin: 0.5rem;
+    transition: all .3s;
+}
+
+.text-contatos:hover{
+    transform:scale(1.3)
+}
+
+.text-contatos a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+ul#projetos{
+    display:flex;
+    justify-content: space-around;
+}
+
+ul#projetos li{
+    transition: all .3s ease-in-out;
+}
+
+ul#projetos li:hover{
+    transform: scale(1.2);
+}
+
+#projetos li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+/* cor icones: 13DA00 */
+
+ul#skills{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+
+.icons{
+    width: 75%;
+    transition: all .3s;
+    
+}
+
+.icons:hover{
+    transform: scale(1.4);
+}
+
+#footer{
+    background-color: black;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    width: 30%;
+    color: #13DA00;
+    text-align: center;
+    margin: 0 auto
+}
+
+#footer div a{
+    text-decoration: none;
+    color: #13DA00;
+
+}
+
