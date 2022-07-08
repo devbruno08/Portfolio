@@ -8,13 +8,20 @@
 }
 
 body{
-    background-image: url(../image/NvL.gif);
-    
+    background-color: black;
+
+
+}
+
+canvas{
+    width: 100%;
+    position: absolute;
+
 }
 
 #nav-bar{
-    width: 100%;   
-    
+    width: 100%;
+    position: relative;
 }
 
 ul#menu{
@@ -32,6 +39,7 @@ ul#menu li{
     font-variant: small-caps;
     color: rgb(0, 0, 0);
     transition: all .2s;
+    
     
 }
 
@@ -69,10 +77,12 @@ main{
     border-radius: 30%;
     padding: 1.5rem;
     margin: 0 auto;
+    position: relative;
     
 }
 
 .box{
+
     background-color: black;
     padding: 4rem;
     width: 84vh;
@@ -82,13 +92,13 @@ main{
 
 }
 
-header h1{
-    font-size: 1.8rem;
+header section h1{
+    font-size: 2.5rem;
 }
 
-header h2{
-    font-size: 1rem;
-    padding: 1rem;
+header section h2{
+    font-size: 1.3rem;
+    padding: 2rem;
     
 }
 
@@ -98,10 +108,11 @@ header h2{
     font-variant:small-caps;
     font-weight: lighter;
     color: black;
-    width: 98vh;
-    /*margin: 1rem 1rem 1rem 12rem;*/
+    width: 70vw;
     text-align: center;
     border-radius: 1rem;
+    position: relative;
+    
     
 }
 
