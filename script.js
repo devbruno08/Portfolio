@@ -6,7 +6,7 @@ c.height = window.innerHeight
 c.width = window.innerWidth
 
 const letras = ["日","ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
-const tamanhoFonte = 15;
+const tamanhoFonte = 10;
 
 const colunas = c.width / tamanhoFonte;
 
