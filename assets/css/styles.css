@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? family= Indie+Flor & display=swap');
 
 *{
+    
     padding: 0;
     margin: 0;
     box-sizing: 0;
@@ -8,23 +9,28 @@
 }
 
 body{
-    background-color: black;
 
+    background-color: black;
 
 }
 
 canvas{
+
     width: 100%;
+    height: 156vh; 
     position: absolute;
 
 }
 
 #nav-bar{
+
     width: 100%;
     position: relative;
+    opacity: 0.8;
 }
 
 ul#menu{
+
     display: flex;
     justify-content: center;
     width: 100%;
@@ -32,14 +38,15 @@ ul#menu{
 }
 
 ul#menu li{
+
     background-color: rgb(0, 232, 62);
     list-style: none;
     padding: .7rem 1rem .7rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-variant: small-caps;
     color: rgb(0, 0, 0);
+    font-weight: bold;
     transition: all .2s;
-    
     
 }
 
@@ -73,7 +80,7 @@ main{
 
 #eu img{
     display: flex;
-    width: 15rem;
+    width: 16vw;
     border-radius: 30%;
     padding: 1.5rem;
     margin: 0 auto;
@@ -84,76 +91,109 @@ main{
 .box{
 
     background-color: black;
-    padding: 4rem;
-    width: 84vh;
+    padding: 10px 20px;
+    width: 55vw;
     opacity: 0.9;
     text-align: center;
-    margin: 0 auto;
 
 }
 
 header section h1{
+
+    margin-top: 3rem;
     font-size: 2.5rem;
 }
 
 header section h2{
-    font-size: 1.3rem;
-    padding: 2rem;
+
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-top: 1rem;
     
 }
 
 .title{
+    margin: 0 auto;
     background-color: rgb(0, 232, 62);
     font-size: 1.5rem;
     font-variant:small-caps;
     font-weight: lighter;
     color: black;
-    width: 70vw;
+    opacity: 0.9;
+    width: 100%;
     text-align: center;
     border-radius: 1rem;
     position: relative;
     
-    
 }
 
 p#sobre{
+
     color: white;
-    font-size: large;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3vw;     
 }
 
 ul#contatos{
+
     color: white;
+    padding-top: 5vh;
+    height: 100%;
     list-style: none;
     display:flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
     text-decoration: none;
     
 }
 
+ul#contatos li{
+    width: 15vw;
+    height: 4vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div-title{
+
+    margin: 0 auto;
+    margin-bottom: 5vh;
+};
+
 .text-contatos{
-    margin: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
     transition: all .3s;
 }
 
 .text-contatos:hover{
+
     transform:scale(1.3)
 }
 
 .text-contatos a{
+    margin: 1vw;
+    font-size: 1.1rem;
     text-decoration: none;
     color: white;
 
 }
 
-
 ul#projetos{
+
     display:flex;
     justify-content: space-around;
+    padding: 4vw;
+    align-items: center;
 }
 
 ul#projetos li{
+
     transition: all .3s ease-in-out;
+    padding: 1vw;
 }
 
 ul#projetos li:hover{
@@ -171,6 +211,7 @@ ul#projetos li:hover{
 /* cor icones: 13DA00 */
 
 ul#skills{
+    padding: 4vw;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -188,6 +229,7 @@ ul#skills{
 }
 
 #footer{
+
     background-color: black;
     font-size: 0.8rem;
     opacity: 0.8;
@@ -203,3 +245,37 @@ ul#skills{
 
 }
 
+@media(max-width: 1200px){
+   
+    canvas{
+        height: 190vh;
+    }
+    
+    #contatos {
+        flex-direction: column;
+    }
+
+    .text-contatos{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+} 
+
+@media(max-width:980px){
+   
+    canvas{
+        height: 220vh;
+    }
+}
+
+@media(max-width:700px){
+   
+    ul#contatos li{
+        padding: .5rem;
+    }
+
+    ul#projetos{
+        flex-direction: column;
+    }    
+}
