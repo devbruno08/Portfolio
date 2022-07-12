@@ -51,11 +51,13 @@ ul#menu li{
 }
 
 ul#menu li a{
+
     text-decoration: none;
     color: black;
 }
 
 ul#menu li:hover{
+
     transform: scale(1.2);
     background-color: black;
     color: rgb(0, 232, 62);
@@ -63,6 +65,7 @@ ul#menu li:hover{
 }
 
 ul#menu li a:hover{
+
     color: rgb(0, 232, 62);
 }
 
@@ -71,6 +74,7 @@ header{
 }
 
 main{
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +83,7 @@ main{
 }
 
 #eu img{
+
     display: flex;
     width: 16vw;
     border-radius: 30%;
@@ -113,6 +118,7 @@ header section h2{
 }
 
 .title{
+    
     margin: 0 auto;
     background-color: rgb(0, 232, 62);
     font-size: 1.2rem;
@@ -175,6 +181,7 @@ li.text-contatos{
 }
 
 .text-contatos a{
+
     margin: 1vw;
     font-size: 1.1rem;
     text-decoration: none;
@@ -200,11 +207,13 @@ ul#projetos li{
 }
 
 ul#projetos li:hover{
+
     text-decoration: none;
     transform: scale(1.2);
 }
 
 #projetos li a{
+
     color: white;
     list-style: none;
     text-decoration: none;
@@ -213,6 +222,7 @@ ul#projetos li:hover{
 }
 
 #projetoFrame{
+
     margin-top: 2vw;
 
 }
@@ -220,6 +230,7 @@ ul#projetos li:hover{
 /* cor icones: 13DA00 */
 
 ul#skills{
+
     padding: 4vw;
     display: flex;
     list-style: none;
@@ -228,12 +239,14 @@ ul#skills{
 }
 
 .icons{
+
     width: 75%;
     transition: all .3s;
     
 }
 
 .icons:hover{
+
     transform: scale(1.4);
 }
 
@@ -261,10 +274,12 @@ ul#skills{
     }
     
     #contatos {
+
         flex-direction: column-reverse;
     }
 
     .text-contatos{
+
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -275,34 +290,57 @@ ul#skills{
    
 
     ul#contatos li{
+
         padding: 1rem;
     }
 
     .text-contatos{
+
         white-space: nowrap;
 
     }
 
+    .box{
+
+        width: 70vw;
+    }
+
+    p#sobre{
+    
+        margin-top: 2vh;
+    
+    }
 
     ul#projetos{
-        /* flex-direction: column; */
+        
+        margin: 2vh;
     }    
 
     ul li #frame{
-        width: 180px;
-        height: 100px;
+
+        width: 250px;
+        height: 150px;
         margin-top: 3vh;
     }
 
     #eu img{
+
         width: 30vw;
     }
 
     header section h1{
+
         font-size: 1.8rem;
     }    
 
     header section h2{
+
         font-size: 1.1rem;
     }
+
+    ul#skills{
+
+        margin: 3vh;
+
+    }    
 }
