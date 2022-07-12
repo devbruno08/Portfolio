@@ -16,9 +16,9 @@ body{
 
 canvas{
 
-    width: 100%;
-    height: 140vw;
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 
 }
 
@@ -26,7 +26,7 @@ canvas{
 
     width: 100%;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 ul#menu{
@@ -42,7 +42,7 @@ ul#menu li{
     background-color: rgb(0, 232, 62);
     list-style: none;
     padding: .5rem .7rem .5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-variant: small-caps;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -138,7 +138,7 @@ p#sobre{
 ul#contatos{
 
     color: white;
-    padding-top: 5vh;
+    padding-top: 8vh;
     height: 100%;
     list-style: none;
     display:flex;
@@ -161,7 +161,7 @@ ul#contatos li{
     margin-bottom: 5vh;
 };
 
-.text-contatos{
+li.text-contatos{
 
     display: flex;
     justify-content: center;
@@ -185,8 +185,10 @@ ul#contatos li{
 ul#projetos{
 
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 4vw;
+    align-items: center;
+    padding: 3vw 4vw 0 4vw;
     align-items: center;
 }
 
@@ -207,6 +209,11 @@ ul#projetos li:hover{
     list-style: none;
     text-decoration: none;
     font-size: 1.2rem;
+
+}
+
+#projetoFrame{
+    margin-top: 2vw;
 
 }
 
@@ -254,7 +261,7 @@ ul#skills{
     }
     
     #contatos {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .text-contatos{
@@ -264,20 +271,38 @@ ul#skills{
     }
 } 
 
-@media(max-width:980px){
-   
-    canvas{
-        height: 220vh;
-    }
-}
-
 @media(max-width:700px){
    
+
     ul#contatos li{
-        padding: .5rem;
+        padding: 1rem;
     }
 
+    .text-contatos{
+        white-space: nowrap;
+
+    }
+
+
     ul#projetos{
-        flex-direction: column;
+        /* flex-direction: column; */
     }    
+
+    ul li #frame{
+        width: 180px;
+        height: 100px;
+        margin-top: 3vh;
+    }
+
+    #eu img{
+        width: 30vw;
+    }
+
+    header section h1{
+        font-size: 1.8rem;
+    }    
+
+    header section h2{
+        font-size: 1.1rem;
+    }
 }
